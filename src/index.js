@@ -2,7 +2,8 @@ import React from "react";
 // import ReactDOM from "react-dom";
 // import render from "react-dom";
 import { createRoot } from 'react-dom/client'; // Nuevo
-import PrimerApp from "./PrimerApp";
+// import PrimerApp from "./PrimerApp";
+import CounterApp from "./CounterApp";
 import "./index.css";
 
 
@@ -13,4 +14,4 @@ const divRoot = document.querySelector("#root");
 
 // render.render(saludar, divRoot);
 
-createRoot(divRoot).render(<PrimerApp saludo= 'Hola, soy Eduardo'/>); // Nuevo
+createRoot(divRoot).render(<CounterApp edades={32} />); // Nuevo

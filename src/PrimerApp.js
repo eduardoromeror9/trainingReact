@@ -1,25 +1,31 @@
 // import React, { Fragment } from 'react';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 
 // Funcional componente 
 
-const PrimerApp = ( props ) => {
+const PrimerApp = ( { saludo, subtitulo } ) => {
 
-  const saludo = 'Hola mundo!!';
 
-  console.log(props);
 
   return (
-
     <>  
       <h1>{ saludo }</h1>
-      <p>PrimerApp</p>
+      <p>{ subtitulo }</p>
     </>
   
   );
 
+}
+
+PrimerApp.propTypes = {
+  saludo: PropTypes.string.isRequired
+}
+
+PrimerApp.defaultProps = {
+  subtitulo: 'Soy un subtitulo'
 }
 
 
