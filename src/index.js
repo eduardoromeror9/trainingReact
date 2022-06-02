@@ -14,4 +14,4 @@ const divRoot = document.querySelector("#root");
 
 // render.render(saludar, divRoot);
 
-createRoot(divRoot).render(<CounterApp edades={32} />); // Nuevo
+createRoot(divRoot).render(<CounterApp value={32} />); // Nuevo
